@@ -56,10 +56,10 @@ def bank_name(card_number_list):
     if length in [13, 16] and card_number_list[0] == 4:
         visa = "Visa"
         return visa
-    elif length == 15 and card_number_list[0:2] in ([3,4], [3,7]):
+    elif length == 15 and card_number_list[0:2] in ([3, 4], [3, 7]):
         amex = "Amex"
         return amex
-    elif length == 16 and card_number_list[0:2] in ([5,1], [5,2], [5,3], [5,4], [5,5]):
+    elif length == 16 and card_number_list[0:2] in ([5, 1], [5, 2], [5, 3], [5, 4], [5, 5]):
         mastercard = "MasterCard"
         return mastercard
     # if the card is form a different bank, return "other"
