@@ -1,6 +1,6 @@
 def main():
     loop = True
-    # loop to keep asking user if they would like ot enter another card number
+    # loop to keep asking user if they would like to enter another card number
     while loop:
         card_number = int(input("Card Number : "))
         # turn user input into list with each digit as an index
