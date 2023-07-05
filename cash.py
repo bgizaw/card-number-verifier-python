@@ -21,17 +21,5 @@ def checker(cardNumberList):
     print(finalSum)
 
 
-    
-
-
-
-        
-    
-    
-
-
-
-    
-
 
 main()
