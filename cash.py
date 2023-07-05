@@ -1,13 +1,20 @@
 def main():
-    card_number = int(input("Card Number : "))
-    # turn user input into list with each digit as an index
-    card_number_list = list(map(int, list(str(card_number))))
-    ver = verification(card_number_list)
-    # only print the bank name if the card is valid
-    if ver:
-        print(bank_name(card_number_list))
-    else:
-        print("INVALID")
+    loop = True
+    while loop:
+        card_number = int(input("Card Number : "))
+        # turn user input into list with each digit as an index
+        card_number_list = list(map(int, list(str(card_number))))
+        ver = verification(card_number_list)
+        # only print the bank name if the card is valid
+        if ver:
+            print(bank_name(card_number_list))
+        else:
+            print("INVALID")
+        repeat = input("Would you like to enter another card?(y/n): ")
+        if repeat.lower() == "y":
+            loop = True
+        else:
+            loop = False
 
 
 # use the luhn algorithm to verify the card number
