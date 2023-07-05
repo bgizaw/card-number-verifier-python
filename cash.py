@@ -64,7 +64,7 @@ def bank_name(card_number_list):
         return mastercard
     # if the card is form a different bank, return "other"
     else:
-        other = "other"
+        other = "Other"
         return other
 
 
