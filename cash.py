@@ -30,7 +30,7 @@ def verification(card_number_list):
     subtractor = 0
 
     # if any numbers in the list are above or equal to 10 (meaning they have more than 1 digit)
-    # break them up into their digits so they can be added to the sum
+    # break them up into their digits, so they can be added to the sum
     for i in doubled:
         if i >= 10:
             digits = list(map(int, list(str(i))))
