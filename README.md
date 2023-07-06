@@ -1,5 +1,5 @@
 # card-number-verifier-python
-reads a card number inputted by the user and returns if it is valid and from what bank the card is made (Amex, Mastercard, or Visa)
+Reads a card number inputted by the user and returns from what bank the card is made. Supports the following banks: Amex, Mastercard, or Visa.
 
 ## Luhn Algorithm
 <sub> **Most card numbers are made using an algorithm invented by Hans Peter Luhn of IBM. You can determine if any credit card number is syntactically valid using the following algorithm:**
