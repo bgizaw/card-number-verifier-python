@@ -35,7 +35,9 @@ The **Credit Card Validator** is a Python program that validates credit card num
 $ python credit_card_validator.py
 Card Number: 1234567890123456
 INVALID
+```
 
+```shell
 $ python credit_card_validator.py
 Card Number: 4111111111111111
 Bank: Visa
