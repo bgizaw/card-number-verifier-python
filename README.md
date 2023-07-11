@@ -30,6 +30,7 @@ The **Credit Card Validator** is a Python program that validates credit card num
    python credit_card_validator.py
 
 ## Examples 
+**[*You may also look through the example credit card numbers listed in this link to test the code*](https://developer.paypal.com/api/nvp-soap/payflow/integration-guide/test-transactions/#standard-test-cards)**
 
 ```shell
 $ python credit_card_validator.py
