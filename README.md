@@ -1,8 +1,44 @@
-# card-number-verifier-python
-Reads a card number inputted by the user and returns from what bank the card is made. Supports the following banks: Amex, Mastercard, or Visa.
+<div align="center">
 
-## Luhn Algorithm
-<sub> **Most card numbers are made using an algorithm invented by Hans Peter Luhn of IBM. You can determine if any credit card number is syntactically valid using the following algorithm:**
-1. Multiply every other digit by 2, starting with the second-to-last digit of the card number, then add all those products together
-2. Add the previous sum to the sum of the digits remaining in the number that you did not multiply by 2
-3. If the total you received after completing step 2 has a final digit of 0, then the card number is valid. In code, you can find the last digit by using the % (modulo) operator to find the modulo between your sum and 10 (sum % 10), which will return the remainder left over after you divide your sum by 10. Since only a number ending with the digit 0 would return a remainder of 0, if your modulo operation returns 0, then the card number is valid.</sub>
+# Credit Card Validator
+
+
+**A simple Python program to validate credit card numbers using the Luhn algorithm and determine the associated bank.**
+
+
+</div>
+
+## Description
+
+The **Credit Card Validator** is a Python program that validates credit card numbers using the Luhn algorithm and identifies the associated bank. It provides a reliable way to check the validity of a credit card and determine if it belongs to Visa, Amex, MasterCard, or another bank.
+
+## Features
+
+- Validates credit card numbers using the Luhn algorithm
+- Identifies the associated bank (Visa, Amex, MasterCard, or Other)
+- User-friendly command-line interface
+- Fast and efficient algorithm
+
+## Usage
+
+1. Make sure you have Python 3.x installed on your machine.
+2. Clone this repository or download the `credit_card_validator.py` file.
+3. Open a terminal or command prompt and navigate to the project directory.
+4. Run the following command to execute the program:
+
+   ```shell
+   python credit_card_validator.py
+
+## Examples 
+**[*You may also look through the example credit card numbers listed in this link to test the code*](https://developer.paypal.com/api/nvp-soap/payflow/integration-guide/test-transactions/#standard-test-cards)**
+
+```shell
+$ python credit_card_validator.py
+Card Number: 1234567890123456
+INVALID
+```
+
+```shell
+$ python credit_card_validator.py
+Card Number: 4111111111111111
+Bank: Visa
