@@ -1,5 +1,5 @@
 def main():
-    loops = True
+    loop = True
     # loop to keep asking user if they would like to enter another card number
     while loop:
         card_number = int(input("Card Number : "))
